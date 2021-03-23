@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity"
+    tools:ignore="HardcodedText">
+
+    <Button
+        android:id="@+id/_0"
+        style="@style/Btn"
+        android:text="0: Mic Check " />
+
+    <Button
+        android:id="@+id/_1"
+        style="@style/Btn"
+        android:text="1: The Problem " />
+
+    <Button
+        android:id="@+id/_2"
+        style="@style/Btn"
+        android:text="2: Solution " />
+
+    <Button
+        android:id="@+id/_3"
+        style="@style/Btn"
+        android:text="3: Ensure Never Frozen " />
+
+    <Button
+        android:id="@+id/_4"
+        style="@style/Btn"
+        android:text="4: Freeze " />
+
+    <Button
+        android:id="@+id/_5"
+        style="@style/Btn"
+        android:text="5: Global " />
+
+    <Button
+        android:id="@+id/_6"
+        style="@style/Btn"
+        android:text="6: Leaks " />
+
+</LinearLayout>
