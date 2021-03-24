@@ -26,6 +26,8 @@ class _2_Solution : CallWithCallback {
                 doSomeStaticMath()
             }
 
+            doSomeMathWithArg(counter)
+
             callback(counter)
         }
     }
