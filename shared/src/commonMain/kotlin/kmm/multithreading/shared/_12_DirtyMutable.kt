@@ -3,7 +3,11 @@
 package kmm.multithreading.shared
 
 import co.touchlab.stately.ensureNeverFrozen
-import kmm.multithreading.shared.util.*
+import kmm.multithreading.shared.util.CallWithCallback
+import kmm.multithreading.shared.util.DetachedObjectGraph
+import kmm.multithreading.shared.util.GC
+import kmm.multithreading.shared.util.TransferMode
+import kmm.multithreading.shared.util.attach
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.MainScope
 import kotlinx.coroutines.launch
