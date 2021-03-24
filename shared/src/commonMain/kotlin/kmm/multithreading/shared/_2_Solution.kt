@@ -39,6 +39,30 @@ class _2_Solution : CallWithCallback {
             arg % 2
         }
     }
+
+    private suspend fun trampoline() {
+        withContext(Dispatchers.Default) {
+            val a = 42
+
+            val b = withContext(Dispatchers.Main) {
+                a + counter // Frozen
+            }
+
+            b % 2
+        }
+    }
+
+    private suspend fun trampolineFixed() {
+        val a = withContext(Dispatchers.Default) {
+            42
+        }
+
+        val b = a + counter
+
+        withContext(Dispatchers.Default) {
+            b % 2
+        }
+    }
 }
 
 private fun doSomeStaticMath() = 42

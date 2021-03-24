@@ -37,13 +37,16 @@ final class ViewController: UIViewController {
 
     private lazy var buttons: [UIButton] = {
         [
-            makeButton(title: "0: Mic Check "),
-            makeButton(title: "1: The Problem "),
-            makeButton(title: "2: Solution "),
-            makeButton(title: "3: Ensure Never Frozen "),
-            makeButton(title: "4: Freeze "),
-            makeButton(title: "5: Global "),
-            makeButton(title: "6: Leaks ")
+            makeButton(title: "0: Mic Check"),
+            makeButton(title: "1: The Problem"),
+            makeButton(title: "2: Solution"),
+            makeButton(title: "3: Ensure Never Frozen"),
+            makeButton(title: "4: Freeze"),
+            makeButton(title: "5: Global"),
+            makeButton(title: "6: Leaks"),
+            makeButton(title: "7: Atomics"),
+            makeButton(title: "8: Mutex"),
+            makeButton(title: "8: Mutating Via Copying")
         ]
     }()
 
@@ -54,7 +57,10 @@ final class ViewController: UIViewController {
         _3_EnsureNeverFrozen(),
         _4_Freeze(),
         _5_Global(),
-        _6_Leaks()
+        _6_Leaks(),
+        _7_Atomics(),
+        _8_Mutex(),
+        _9_MutatingViaCopying()
     ]
 
     private static func makeAttributedText(from text: String) -> NSAttributedString {
@@ -64,7 +70,7 @@ final class ViewController: UIViewController {
     @objc private func handleAction(button: UIButton) {
         guard let index = buttons.firstIndex(of: button) else { return }
         problems[index].call(callback: { res in
-            let newText = (button.attributedTitle(for: .normal)?.string ?? "") + "\(res)"
+            let newText = (button.attributedTitle(for: .normal)?.string ?? "") + " \(res)"
             button.setAttributedTitle(ViewController.makeAttributedText(from: newText), for: .normal)
         })
     }
