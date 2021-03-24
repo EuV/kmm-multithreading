@@ -25,7 +25,7 @@ class _10_MultithreadingWithDTO : CallWithCallback {
             val (a2, b2) = withContext(Dispatchers.Default) {
                 val (a, b) = dto
 
-                a.hashCode() + b.hashCode()
+                print(a.hashCode() + b.hashCode())
 
                 DTO(null, Any())
             }

@@ -4,7 +4,10 @@ package kmm.multithreading.shared
 
 import kmm.multithreading.shared.util.CallWithCallback
 import kmm.multithreading.shared.util.GC
-import kotlinx.coroutines.*
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.MainScope
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 
 class _6_Leaks : CallWithCallback {
 

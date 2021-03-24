@@ -20,7 +20,7 @@ class _4_Freeze : CallWithCallback {
 
     override fun call(callback: (Any) -> Unit) {
         scope.launch(Dispatchers.Default) {
-            immutable % 2
+            print(immutable % 2)
         }
     }
 }

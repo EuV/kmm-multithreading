@@ -20,9 +20,12 @@ class _2_Solution : CallWithCallback {
 
             val frozenCounter = counter
             withContext(Dispatchers.Default) {
-                // this@_2_Solution.counter % 2
-                frozenCounter % 2
+                // print(this@_2_Solution.counter % 2)
+
+                print(frozenCounter % 2)
+
                 // this@_2_Solution.doSomeMath()
+
                 doSomeStaticMath()
             }
 

@@ -25,7 +25,7 @@ class _3_EnsureNeverFrozen : CallWithCallback {
 
             val frozenCounter = counter
             withContext(Dispatchers.Default) {
-                frozenCounter % 2
+                print(frozenCounter % 2)
             }
 
             callback(counter)

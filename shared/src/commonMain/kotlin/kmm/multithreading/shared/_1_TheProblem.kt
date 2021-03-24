@@ -19,11 +19,10 @@ class _1_TheProblem : CallWithCallback {
             counter++
 
             withContext(Dispatchers.Default) { // native-mt
-                counter % 2
+                print(counter % 2)
             }
 
             callback(counter)
         }
     }
 }
-

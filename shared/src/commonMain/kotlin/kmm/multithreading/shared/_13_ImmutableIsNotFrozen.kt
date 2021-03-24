@@ -21,6 +21,6 @@ class _13_ImmutableIsNotFrozen : CallWithCallback {
 
 private fun log(list: List<Any>) {
     GlobalScope.launch {
-        list.size
+        print(list.size)
     }
 }

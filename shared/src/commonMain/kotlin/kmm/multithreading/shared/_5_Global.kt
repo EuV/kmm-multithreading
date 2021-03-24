@@ -6,6 +6,7 @@ import kmm.multithreading.shared.util.CallWithCallback
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.MainScope
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 import kotlin.native.concurrent.SharedImmutable
 import kotlin.native.concurrent.ThreadLocal
 
@@ -18,7 +19,9 @@ class _5_Global : CallWithCallback {
 
     override fun call(callback: (Any) -> Unit) {
         scope.launch(Dispatchers.Default) {
-            staticAny
+            withContext(Dispatchers.Default) {
+                staticAny
+            }
         }
         Obj.inc()
     }
