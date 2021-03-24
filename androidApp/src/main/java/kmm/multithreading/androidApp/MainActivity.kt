@@ -20,6 +20,9 @@ class MainActivity : AppCompatActivity() {
     private val _7 = _7_Atomics()
     private val _8 = _8_Mutex()
     private val _9 = _9_MutatingViaCopying()
+    private val _10 = _10_MultithreadingWithDTO()
+    private val _11 = _11_PureMutable()
+    private val _12 = _12_DirtyMutable()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -35,6 +38,9 @@ class MainActivity : AppCompatActivity() {
         R.id._7.onClick(_7)
         R.id._8.onClick(_8)
         R.id._9.onClick(_9)
+        R.id._10.onClick(_10)
+        R.id._11.onClick(_11)
+        R.id._12.onClick(_12)
     }
 
     private fun Int.onClick(callWithCallback: CallWithCallback) {

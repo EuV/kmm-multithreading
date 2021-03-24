@@ -46,7 +46,10 @@ final class ViewController: UIViewController {
             makeButton(title: "6: Leaks"),
             makeButton(title: "7: Atomics"),
             makeButton(title: "8: Mutex"),
-            makeButton(title: "8: Mutating Via Copying")
+            makeButton(title: "9: Mutating Via Copying"),
+            makeButton(title: "10: Multithreading With DTO"),
+            makeButton(title: "11: Pure Mutable"),
+            makeButton(title: "12: Dirty Mutable"),
         ]
     }()
 
@@ -60,7 +63,10 @@ final class ViewController: UIViewController {
         _6_Leaks(),
         _7_Atomics(),
         _8_Mutex(),
-        _9_MutatingViaCopying()
+        _9_MutatingViaCopying(),
+        _10_MultithreadingWithDTO(),
+        _11_PureMutable(),
+        _12_DirtyMutable()
     ]
 
     private static func makeAttributedText(from text: String) -> NSAttributedString {

@@ -58,4 +58,19 @@
         style="@style/Btn"
         android:text="9: Mutating Via Copying" />
 
+    <Button
+        android:id="@+id/_10"
+        style="@style/Btn"
+        android:text="10: Multithreading With DTO" />
+
+    <Button
+        android:id="@+id/_11"
+        style="@style/Btn"
+        android:text="11: Pure Mutable" />
+
+    <Button
+        android:id="@+id/_12"
+        style="@style/Btn"
+        android:text="11: Dirty Mutable" />
+
 </LinearLayout>
