@@ -71,6 +71,21 @@
     <Button
         android:id="@+id/_12"
         style="@style/Btn"
-        android:text="11: Dirty Mutable" />
+        android:text="12: Dirty Mutable" />
+
+    <Button
+        android:id="@+id/_13"
+        style="@style/Btn"
+        android:text="13: Immutable Is Not Frozen" />
+
+    <Button
+        android:id="@+id/_14"
+        style="@style/Btn"
+        android:text="14: Trampoline" />
+
+    <Button
+        android:id="@+id/_15"
+        style="@style/Btn"
+        android:text="15: Throttling" />
 
 </LinearLayout>

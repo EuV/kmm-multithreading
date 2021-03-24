@@ -23,6 +23,9 @@ class MainActivity : AppCompatActivity() {
     private val _10 = _10_MultithreadingWithDTO()
     private val _11 = _11_PureMutable()
     private val _12 = _12_DirtyMutable()
+    private val _13 = _13_ImmutableIsNotFrozen()
+    private val _14 = _14_Trampoline()
+    private val _15 = _15_Throttling()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -41,6 +44,9 @@ class MainActivity : AppCompatActivity() {
         R.id._10.onClick(_10)
         R.id._11.onClick(_11)
         R.id._12.onClick(_12)
+        R.id._13.onClick(_13)
+        R.id._14.onClick(_14)
+        R.id._15.onClick(_15)
     }
 
     private fun Int.onClick(callWithCallback: CallWithCallback) {

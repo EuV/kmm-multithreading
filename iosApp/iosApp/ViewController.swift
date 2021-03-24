@@ -50,6 +50,9 @@ final class ViewController: UIViewController {
             makeButton(title: "10: Multithreading With DTO"),
             makeButton(title: "11: Pure Mutable"),
             makeButton(title: "12: Dirty Mutable"),
+            makeButton(title: "13: Immutable Is Not Frozen"),
+            makeButton(title: "14: Trampoline"),
+            makeButton(title: "15: Throttling")
         ]
     }()
 
@@ -66,7 +69,10 @@ final class ViewController: UIViewController {
         _9_MutatingViaCopying(),
         _10_MultithreadingWithDTO(),
         _11_PureMutable(),
-        _12_DirtyMutable()
+        _12_DirtyMutable(),
+        _13_ImmutableIsNotFrozen(),
+        _14_Trampoline(),
+        _15_Throttling()
     ]
 
     private static func makeAttributedText(from text: String) -> NSAttributedString {
