@@ -2,6 +2,7 @@
 
 package kmm.multithreading.shared
 
+import co.touchlab.stately.ensureNeverFrozen
 import co.touchlab.stately.freeze
 import kmm.multithreading.shared.util.CallWithCallback
 import kotlinx.coroutines.Dispatchers
@@ -14,13 +15,21 @@ class _4_Freeze : CallWithCallback {
 
     private val immutable = 42
 
+    private val weird = WeirdStuff()
+
     init {
         freeze()
     }
 
     override fun call(callback: (Any) -> Unit) {
         scope.launch(Dispatchers.Default) {
-            print(immutable % 2)
+            print(immutable + weird.hashCode())
         }
+    }
+}
+
+private class WeirdStuff {
+    init {
+        ensureNeverFrozen()
     }
 }
